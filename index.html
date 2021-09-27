@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Brock Engineering</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="styles.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="bi-lightning-charge"></i> Zach Brock</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Code</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#design">Web-Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <a target='_blank' href='https://www.linkedin.com/in/zach-brock-687093210/' class='btn btn-primary'><i class="bi-linkedin"></i> Connect on Linkedin</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <header class='text-center p-section'>
+    <div class='container-fluid'>
+      <div class='row'>
+        <div class='col-md-6 offset-md-3'>
+            <div class="typewriter">
+                <h1 class="section-title section-title-intro">
+                    <div class = "animated"><strong>Hi, I'm Zach Brock</strong></div>
+                </h1>
+            </div>
+          <h1>Engineer using <span class='marker-highlight'>technology</span> and <span class='marker-highlight'>problem-solving</span> to positively impact others.</h1>
+          <p class='lead mb-5'>Regardless of the job title, I make technology work <i>for</i> people.</p>
+
+          <a target='_blank' href='https://www.linkedin.com/in/zach-brock-687093210/' class='btn btn-primary'><i class="bi-linkedin"></i> Connect on Linkedin</a>
+          <!-- <a  target='_blank' href='https://calendly.com/morganjlopes/call' class='btn btn-primary'><i class="bi-calendar-event"></i> Schedule a Call</a> -->
+          <!-- <a href='#' class='btn btn-primary'><i class="bi-download"></i> Download Resume</a> -->
+          <!-- <a href='mailto:' class='btn btn-primary'><i class="bi-envelope"></i> Send Email</a> -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id='company' class='p-section'>
+    <div class='container text-center'>
+      <label class='sup mb-3 text-muted'>My Recent History</label>
+
+      <div class='row justify-content-center d-flex align-items-center'>
+        <div class='col-2'>
+          <a href='https://www.uwplatt.edu/' target='_blank'><img src="images/univ_logo.png" class="work-image"></a>
+        </div>
+        <div class='col-2'>
+            <a href = 'https://www.trachte.com/' target='_blank'><img src="images/trachte.PNG" class="work-image"></a>
+        </div>
+        <div class='col-2 btn'>
+            <a href = 'https://www.seatsinc.com/about-us/' target='_blank'><img src="images/seats.PNG    " class="work-image"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id='portfolio' class='p-section bg-light'>
+    <div class='container'>
+      <sup>Code Portfolio</sup>
+      <h2 class='mb-5 underline'>Featured Code</h2>
+
+      <div class='row mb-5'>
+        <div class='col-sm-4 featured-code'>
+          <div class='card h-100'>
+            <div class='background-image' style='background-image: url(img/portfolio-endit-movement.png)'>
+              <img class = 'project-preview' src='images/mandelbrot.png'>
+            </div>
+            <div class='card-body'>
+
+              <!-- Mandelbrot ------------------------------------------>
+
+              <h3>Mandelbrot Viewer</h3>
+              <p class='mb-3'>The mandelbrot fractal's complex beauty arises from a simple equation.  This online visualization allows you to explore the captivating shapes and colors found within.</p>
+              
+            </div>
+            <div class='card-footer'>
+              <a href='https://github.com/brock-eng/Mandelbrot-Viewer' class='btn btn-sm btn-light' target="_blank"><i class="bi-github"></i> Code</a>
+              <a href='mandelbrot/output.html' class='btn btn-sm btn-light'><i class="bi-power"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class='col-sm-4 featured-code'>
+          <div class='card h-100'>
+            <div class='background-image' style='background-image: url(img/portfolio-aggregate-law.png)'>
+              <img class='project-preview' src='images/circlesim.png'>
+            </div>
+            <div class='card-body'>
+
+              <!-- Circlesim -------------------------------------------->
+              <h3>Collision Physics</h3>
+              <p class='mb-3'>Throw a couple hundred circles on a screen, give them some collision physics, and then introduce gravity: this is the result.</p>
+              
+
+            </div>
+            <div class='card-footer'>
+              <a href='https://github.com/brock-eng/Circle-Physics-Sandbox' class='btn btn-sm btn-light' target='_blank'><i class="bi-github"></i> Code</a>
+              <a href='circlesim/circlesim.html' class='btn btn-sm btn-light'><i class="bi-power"></i> Demo</a>
+              <!-- a href='#' class='btn btn-sm btn-primary float-end'><i class="bi-play-fill"></i> Watch</a> -->
+            </div>
+          </div>
+        </div>
+
+        <div class='col-sm-4 featured-code'>
+          <div class='card h-100'>
+            <div class='background-image' style='background-image: url(img/portfolio-growing-leaders.png)'>
+              <img src='images/softbody.png' class='project-preview'>
+            </div>
+            <div class='card-body'>
+
+              <!-- Soft Body -------------------------------------------->
+              <h3>Soft Body Simulation</h3>
+              <p class='mb-3'>A 'Soft-Body' is any physical object that deforms when acted on by a force (E.g. jello or a water balloon).  This simulation uses a system of nodes and springs to approximate soft-body object behavior.<p>
+
+            </div>
+            <div class='card-footer'>
+              <a href='https://github.com/brock-eng/Soft-Body-Simulation' class='btn btn-sm btn-light' target="_blank"><i class="bi-github"></i> Code</a>
+              <a href='softbody/softbody.html' class='btn btn-sm btn-light'><i class="bi-power"></i> Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class='pt-3'>Tools I Use</h3>
+      <div class='row'>
+        <div class='col-sm-5'>
+          <p class='pb-3 lead'>I work with powerful programming languages that have stood the test of time while also staying on top of cutting edge web development frameworks.<br>Past projects include things like:</p>
+
+          <ul class='lead'>
+            <li>Intuitive GUI Desktop Applications</li>
+            <li>Custom Engineering Software Tools</li>
+            <li>Physics Simulations</li>
+            <li>Portfolio Websites</li>
+            <li>Small Business Websites</li>
+          </ul>
+        </div>
+        <div class='col-sm-7'>
+
+          <ul class='text-center list-inline w-md ms-auto me-auto'>
+            <li class='list-inline-item'>
+                <img src="images/logos/c++.png" alt="" class="logos">
+            </li>
+            <li class='list-inline-item'>
+                <img src="images/logos/java.png" alt="" class="logos" style="width: 100px;">
+            </li>
+            <li class='list-inline-item'>
+                <img src="images/logos/c_sharp.png" alt="" class="logos">
+            </li>
+            <li class='list-inline-item'>
+                <img src="images/logos/python.svg" alt="" class="logos" style="width: 180px;">
+            </li>
+            <li class='list-inline-item'>
+                <img src="images/logos/frontend.png" alt="" class="logos" style="width: 400px; height: 120px">
+            </li>
+            <li class='list-inline-item'>
+                <img src="images/logos/react.png" alt="" class="logos" style="width: 150px; height: 50px">
+            </li>
+            <li class='list-inline-item'>
+                <img src="images/logos/django.png" alt="" class="logos" style="width: 140px; height: 110px">
+            </li>
+            <li class='list-inline-item'>
+                <img src="images/logos/bootstrap.png" alt="" class="logos" style="width: 120px; height: 70px">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id='about' class='p-section'>
+    <div class='container container-lg'>
+      <sup>About</sup>
+      <div class='row flex-row'>
+        <h2 class='mb-5 underline'>Meet Zach</h2>
+        <div class='col-sm-4'>
+          <div class='p-3 sticky-top' style='top: 85px;'>
+            <img src="images/headshot.png" class='circle mb-3'>
+
+            <ul class='list-inline mb-0 text-center'>
+              <li class='list-inline-item h4 mb-0 me-3'>
+                <a href='https://www.linkedin.com/in/zach-brock-687093210/' target='_blank' class='text-dark'>
+                  <i class="bi-linkedin"></i>
+                </a>
+              </li>
+              <li class='list-inline-item h4 mb-0 me-3'>
+                <a href='https://github.com/brock-eng' target='_blank' class='text-dark'>
+                  <i class="bi-github"></i>
+                </a>
+              </li>
+              <li class='list-inline-item h4 mb-0 me-3'>
+                <a href='mailto:zbrock.eng@gmail.com' target='_blank' class='text-dark'>
+                  <i class="bi-envelope"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='col-sm-8'>
+          <blockquote>Actively writing code, creating, composing, and more.</blockquote>
+
+          <hr/>
+
+          <p class='lead'>Thought-filled multidisciplinary engineer who believes that <span class='marker-highlight'>consistent daily progress</span> is the life-blood that sustains incredible accomplishments.</p>
+          <p class='lead'>Zach has worked a variety of positions, having worked in the construction industry for several years before transisitioning into tech.  He holds a degree in Mechanical Engineering from the University of Wisconsin - Platteville but somewhere along the way he found a previously undiscovered passion for code and software.  Zach currently puts his diverse skillset to use as a Manufacturing Engineer for Seats Incorporated out of Reedsburg, WI.</p>
+          <p class='lead'>Outside of work, Zach is a prolific percussionist and avid participant in the marching arts, having spent several seasons as a participant of Drum Corps International.  Since then, he's worked with several Wisconsin area high school marching band programs where he inspires excellence in youth.  If he's not hacking on a pad or drumset, Zach can be seen at the gym, reading a good book, or biking through local trails.</p>
+          
+          <p class='lead mb-0'>Favorite Tech:</p>
+
+          <ul class='lead'>
+            <li><span class='marker-highlight'>C/C++</span></li>
+            <li>Git/Github</li>
+            <li>Solidworks</li>
+          </ul>
+
+          <div class='mt-5'>
+            <a target='_blank' href='https://www.linkedin.com/in/morganjlopes/' class='btn btn-primary'><i class="bi-linkedin"></i> Connect on Linkedin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id='design' class='p-section'>
+    <div class='container'>
+      <sup>Testimonials</sup>
+      <h2 class='mb-5 underline'>Kind Words<br>from Great People</h2>
+
+      <div class='row'>
+        <div class='col-sm-4'>
+          <div class='p-3'>
+            <div class=''>
+              <blockquote class='quotation'>“Final product <span class='marker-highlight'>exceeded</span> my expectations”</blockquote>
+              <p class='lead'>We worked on both a website and then later on a companion iOS App. Great to work with, easy communications, and the final product exceeded my expectations.</p>
+            </div>
+            <div class=''>
+              <img src="img/testimonial-scott.jpeg" class='circle testimonial-image'>
+              <h3 class='pt-3'>Scott</h3>
+              <em>Web, iOS, and Android App</a></em>
+            </div>
+          </div>
+        </div>
+
+        <div class='col-sm-4'>
+          <div class='p-3'>
+            <div class=''>
+              <blockquote class='quotation'>“Doing great things by helping build strong minds”</blockquote>
+              <p class='lead'>Morgan Lopes is a man doing great things by helping build strong minds ready for the dynamic world of problem solving. In a time where pedagogical learning seems to be fading, Morgan steps in to bring <span class='marker-highlight'>confidence</span> to future developers and problem solvers willing to listen!</p>
+            </div>
+            <div class=''>
+              <img src="img/testimonial-one.png" class='circle testimonial-image'>
+              <h3 class='pt-3'>Code School Student</h3>
+              <em>Presentation Feedback</em>
+            </div>
+          </div>
+        </div>
+
+        <div class='col-sm-4'>
+          <div class='p-3'>
+            <div class=''>
+              <blockquote class='quotation'>“Transparent, professional, and good...”</blockquote>
+              <p class='lead'>Great to work with. <span class='marker-highlight'>Transparent</span>, professional, and good at it. I would recommend to anyone.</p>
+            </div>
+            <div class=''>
+              <img src="img/testimonial-jennifer.jpeg" class='circle testimonial-image'>
+              <h3 class='pt-3'>Jennifer</h3>
+              <em>Three Sided Marketplace</em>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class='bg-dark text-white section-inverse'>
+    <div class='container'>
+      <div class='bg-primary p-5 card'>
+        <h2 class='mb-5 text-center underline'>Shipping More Than Code</h2>
+        
+        <div class='row'>
+          <div class='col-sm-4'>
+            <h3><i class="bi-pen me-2"></i> Popular Writings</h3>
+            <ul>
+              <li>
+                <a target='_blank' href='https://www.morganjlopes.com/annual-reflection-framework/' class='text-white'>Annual Reflection Framework</a>
+              </li>
+              <li>
+                <a target='_blank' href='https://www.morganjlopes.com/bringing-humanity-back-to-email/' class='text-white'>Bringing Humanity Back to Email</a>
+              </li>
+              <li>
+                <a target='_blank' href='https://www.morganjlopes.com/work-life-harmony/' class='text-white'>Work Life Harmony</a>
+              </li>
+              <li>
+                <a target='_blank' href='https://medium.com/tenrocket/web-and-mobile-app-sitemap-643b60b0343e' class='text-white'>Web and Mobile App Sitemap</a>
+              </li>
+              <li>
+                <a target='_blank' href='https://medium.com/polar-notion/building-a-blueprint-for-your-idea-5acad1bfb6b7' class='text-white'>Building a Blueprint for your Idea</a>
+              </li>
+              <li>
+                <a target='_blank' href='https://medium.com/polar-notion/how-to-launch-an-idea-in-1-month-398c54d116b9' class='text-white'>How to Launch an Idea in One Month</a>
+              </li>
+            </ul>
+          </div>
+          <div class='col-sm-4'>
+            <h3><i class="bi-megaphone me-2"></i> Podcast Interviews</h3>
+            <ul>
+              <li>
+                <a target='_blank' href='https://podcast.nonprofitmegaphone.com/622294/8188617-morgan-lopes-at-new-story' class='text-white'>Methods and Mindsets with CTO at New Story</a>
+              </li>
+              <li>
+                <a target='_blank' href='https://shrimptankpodcast.com/ep-152-morgan-lopes-process-optimization/' class='text-white'>Process Optimization</a>
+              </li>
+              <li>
+                <a target='_blank' href='https://www.iheart.com/podcast/269-the-second-mile-47831491/episode/1-3-creating-a-successful-human-centered-business-49175425/' class='text-white'>Creating a Human-Centered Business</a>
+              </li>
+              <li>
+                <a target='_blank' href='https://www.audible.com/pd/Using-Tech-for-Good-Podcast/B098PXTJHW' class='text-white'>Using Tech for Good</a>
+              </li>
+              <li>
+                <a target='_blank' href='https://www.audacy.com/podcasts/2-minute-talk-tips-23509/ep-129-medieval-times-to-ceo-with-morgan-lopes-96455297' class='text-white'>From Medieval Times to CEO</a>
+              </li>
+            </ul>
+          </div>
+          <div class='col-sm-4'>
+            <h3><i class="bi-tools me-2"></i> Resources</h3>
+            <ul>
+              <li>
+                <a target='_blank' href='https://www.codeschoolguide.com/book/' class='text-white'>Code School Book</a>
+              </li>
+              <li>
+                <a target='_blank' href='http://polarnotion.github.io/turntable/' class='text-white'>Turntable.js</a>
+              </li>
+              <li>
+                <a target='_blank' href='http://polarnotion.github.io/hamsterwheel' class='text-white'>Hamsterwheel.js</a>
+              </li>
+              <li>
+                <a target='_blank' href='http://polarnotion.github.io/scroll-plugin' class='text-white'>Scrollmptious.js</a>
+              </li>
+              <li>
+                <a target='_blank' href='https://polarnotion.github.io/starwarsintro/' class='text-white'>StarWarsIntro.css</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id='contact' class='p-section-lg bg-dark text-white'>
+    <div class='container container-lg text-center'>
+
+      <sup>Contact</sup>
+      <h2 class='mb-5'>Let's Talk</h2>
+
+      <p class='w-sm ms-auto me-auto lead'>Hey!  I'm always open to meeting new people and hearing about new oppurtunities.  You can reach me via LinkedIn messaging or email.<br>(Responses usually within 1-2 business days)</p>
+
+      <div class='mt-5'>
+        <a target='_blank' href='https://www.linkedin.com/in/zach-brock-687093210/' class='btn btn-primary'><i class="bi-linkedin"></i> Connect on Linkedin</a>
+        <p class='text-white'>or</p>
+        <a href='mailto:zbrock.eng@gmail.com' class='btn btn-primary'><i class="bi-envelope"></i> Send Email</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class='bg-black p-5 text-white'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-sm-6'>
+          <p>
+            Portfolio built on <a href='https://getbootstrap.com/' target='_blank' class='text-white'>Bootstrap</a> and developed by <a href='https://github.com/brock-eng/Bootstrap-Portfolio' target='_blank' class='text-white'>Zach</a>.<br>Mobile and tablet friendly site.
+          </p>
+        </div>
+
+        <div class='col-sm-6'>
+          <ul class='list-inline float-end'>
+            <li class='list-inline-item h4 mb-0 me-3'>
+                <a href='https://www.linkedin.com/in/zach-brock-687093210/' target='_blank' class='text-light'>
+                  <i class="bi-linkedin"></i>
+                </a>
+              </li>
+              <li class='list-inline-item h4 mb-0 me-3'>
+                <a href='https://github.com/brock-eng' target='_blank' class='text-light'>
+                  <i class="bi-github"></i>
+                </a>
+              </li>
+              <li class='list-inline-item h4 mb-0 me-3'>
+                <a href='mailto:zbrock.eng@gmail.com' target='_blank' class='text-light'>
+                  <i class="bi-envelope"></i>
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+    <defs>
+      <filter id="marker-shape">
+        <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+      </filter>
+    </defs>
+  </svg>
+</body>
+</html>

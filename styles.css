@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+:root{
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Roboto Mono', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: white;
+    --clr-dark: #181b20;
+    --clr-normal: ##16e0bd;
+    --clr-accent: #0dbff5;
+
+    --fs-h1: 3.5rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1rem;
+
+    --image-size: 325px;
+    --icon-size: 4em;
+    --small-icon-size: 2em;
+
+    --boxshadow: 0.5em 0.5em 0.75em rgba(0, 0, 0, 0.35), 
+                 0.125em 0.125em 0.35em rgba(0, 0,0,0.25);
+
+    --bg-color: hsl(49 37% 94%);
+
+    --typewriterSpeed: 3s;
+    --typewriterCharacters: 24;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+blockquote {
+  font-family: 'DM Serif Display', serif;
+}
+
+h1, .h1 {
+  font-size: 65px;
+}
+
+@media (max-width: 880px)
+{
+    h1, .h1 {
+        font-size: 35px;
+    }
+}
+
+h2, .h2 {
+  font-size: 45px;
+}
+
+img {
+  max-width: 100%;
+}
+
+blockquote {
+  font-size: 28px;
+}
+
+sup, .sup {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.underline::after {
+  content: ' ';
+  border-bottom: 3px solid;
+  position: relative;
+  display: block;
+  width: 50px;
+  padding-top: 1rem;
+}
+
+.underline.text-center::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-inverse {
+  margin-top: 180px;
+  padding: 1px 0px;
+}
+
+.section-inverse > div {
+  margin-top: -180px;
+}
+
+.card-footer {
+  background-color: white;
+  padding: 1rem 1rem;
+}
+
+.background-image {
+  background-position: center center;
+  background-size: cover;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  text-transform: uppercase;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.circle {
+  border-radius: 500px;
+}
+
+header.p-section {
+  padding: 160px 0px 120px;
+}
+
+.p-section {
+  padding: 100px 0px;
+}
+
+.p-section-lg {
+  padding: 160px 0px;
+}
+
+.container-lg {
+  max-width: 900px;
+}
+
+.w-md {
+  max-width: 600px;
+}
+
+.w-sm {
+  max-width: 400px;
+}
+
+.btn {
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  padding: .65rem 1.5rem;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+  padding: .75rem 2rem;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+  padding: .30rem .75rem;
+}
+
+.testimonial-item {
+  max-width: 800px;
+  padding: 40px;
+}
+
+.testimonial-item:nth-child(even) {
+  margin-left: auto;
+}
+
+.testimonial-image {
+  max-width: 100px;
+  float: left;
+  margin-right: 25px;
+}
+
+.marker-highlight {
+  position: relative;
+  display: inline-block;
+}
+
+.marker-highlight:before {
+  content: "";
+  background-color: #0b6efd87;
+  width: 102%;
+  height: 0.2em;
+  position: absolute;
+  z-index: -2;
+  filter: url(#marker-shape);
+  left: -0.05em;
+  padding: 0 0.25em;
+  bottom: 0.2em;
+}
+
+/* Images */
+.project-preview{
+    width: 500px;
+    height: 340px;
+}
+
+.logos{
+    width: 60px;
+    height: 60px;
+    margin: 1rem;
+}
+
+.col-2{
+    min-width: 150px;
+}
+
+.featured-code{
+    min-width: 350px;
+}
+
+
+/* Typewriter Intro */
+
+.typewriter{
+    position: relative;
+    left: auto;
+    right: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.section-title-intro{
+    font-weight: var(--fw-reg);
+    padding-top: 0.1em;
+    padding-bottom: 0.05em;
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    position: relative;
+    width: max-content;
+}
+
+.section-title-intro::before,
+.section-title-intro::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.section-title-intro::before {
+    background: var(--clr-light);
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.section-title-intro::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards,
+        blink 750ms steps(var(--typewriterCharacters)) infinite,
+        remove 6s step-end 1 normal forwards;
+    
+}
+
+.section-subtitle-intro {
+    color: hsl(0 0% 0% / 0.7);
+    font-size: 2.2rem;
+    font-weight: 400;
+    opacity: 0;
+    transform: translateY(3.5rem);
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes remove{
+    to {
+        opacity: 0;
+    }
+}
+
+.skills-resume-message{
+    font-size: 1.25rem;
+    padding-bottom: 1em;
+}
