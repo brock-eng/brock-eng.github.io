@@ -286,3 +286,7 @@ header.p-section {
     font-size: 1.25rem;
     padding-bottom: 1em;
 }
+
+.i-need-more-space{
+  opacity: 0;
+}

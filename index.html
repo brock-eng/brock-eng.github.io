@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link href="styles.css" rel="stylesheet">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
 </head>
 <body>
   <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top">
@@ -83,11 +81,11 @@
     <div class='container'>
       <sup>Code Portfolio</sup>
       <h2 class='mb-5 underline'>Featured Code</h2>
-
+      <div class='p-section btn-sm btn-light'><img src="images/mobile_no.png" style="width: 20px"> Non-Mobile Friendly</div>
       <div class='row mb-5'>
         <div class='col-sm-4 featured-code'>
           <div class='card h-100'>
-            <div class='background-image' style='background-image: url(img/portfolio-endit-movement.png)'>
+            <div class='background-image'>
               <img class = 'project-preview' src='images/mandelbrot.png'>
             </div>
             <div class='card-body'>
@@ -107,7 +105,7 @@
 
         <div class='col-sm-4 featured-code'>
           <div class='card h-100'>
-            <div class='background-image' style='background-image: url(img/portfolio-aggregate-law.png)'>
+            <div class='background-image'>
               <img class='project-preview' src='images/circlesim.png'>
             </div>
             <div class='card-body'>
@@ -127,7 +125,7 @@
 
         <div class='col-sm-4 featured-code'>
           <div class='card h-100'>
-            <div class='background-image' style='background-image: url(img/portfolio-growing-leaders.png)'>
+            <div class='background-image'>
               <img src='images/softbody.png' class='project-preview'>
             </div>
             <div class='card-body'>
@@ -246,40 +244,51 @@
 
   <section id='design' class='p-section'>
     <div class='container'>
-      <sup>Testimonials</sup>
-      <h2 class='mb-5 underline'>Kind Words<br>from Great People</h2>
+      <sup>Web-Design</sup>
+      <h2 class='mb-5 underline'>Custom Web Solutions<br>Made Simple</h2>
 
       <div class='row'>
-        <div class='col-sm-4'>
-          <div class='p-3'>
-            <div class=''>
-              <blockquote class='quotation'>“B.O.B. GOI"</blockquote>
-              <p class='lead'>He doesn't really know how to use git version control so I wouldn't hire him.</p>
-            </div>
-            <div class=''>
-              <img src="img/testimonial-scott.jpeg" class='circle testimonial-image'>
-              <h3 class='pt-3'>Jon White</h3>
-            </div>
-          </div>
+        <div class='col-sm-8'>
+          <blockquote class='quotation'>“Aesthetically pleasing design without the clutter"</blockquote>
+          <p class='lead'>Whether you're trying to elevate your business or get hired, having your own dedicated website is <i>still</i> the best way to stand out.  A professional, clean looking page that visually communicates your best traits is much more effective than just a resume or business card.</p>
+          <p class='lead'>I'd love the oppurtunity to work with you on your desired personal or business site.  </p>
         </div>
-
-    </div>
+        <div class="col-sm-4">
+          
+        </div>
+      </div>
   </section>
 
   <section class='bg-dark text-white section-inverse'>
     <div class='container'>
       <div class='bg-primary p-5 card'>
-        <h2 class='mb-5 text-center underline'>Shipping More Than Code</h2>
+        <h2 class='mb-5 text-center underline'>Resources</h2>
         
         <div class='row'>
           <div class='col-sm-4'>
-            <h3><i class="bi-pen me-2"></i> Popular Writings</h3>
+            <h3><i class="bi-laptop me-2"></i> Game Engine Code</h3>
+            <ul>
+              <li>
+                <a target='_blank' href='https://github.com/brock-eng/Legit-Game-Engine' class='text-white'>2D OpenGL Game Engine</a>
+              </li>
+              <li>
+                <a target='_blank' href='https://github.com/brock-eng/Console-Graphics-Engine' class='text-white'>Windows Console Graphics Engine</a>
+              </li>
+            </ul>
           </div>
           <div class='col-sm-4'>
-            <h3><i class="bi-megaphone me-2"></i> Podcast Interviews</h3>
+            <h3><i class="bi-music-note me-2"></i> Sheet Music</h3>
           </div>
           <div class='col-sm-4'>
-            <h3><i class="bi-tools me-2"></i> Resources</h3>
+            <h3><i class="bi-tools me-2"></i> Tools</h3>
+            <ul>
+              <li>
+                <a target='_blank' href='https://github.com/brock-eng/ODE-Integration-Methods' class='text-white'>ODE Python Solvers</a>
+              </li>
+              <li>
+                <a target='_blank' href='https://github.com/brock-eng/Vanilla-JS-CSS-Carousel' class='text-white'>Vanilla JS+CSS Carousel</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -342,4 +351,5 @@
     </defs>
   </svg>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </html>
