@@ -1,11 +1,43 @@
-<!doctypehtml><html lang=en-us><head><meta charset=utf-8><meta
+<!doctypehtml><html lang=en-us><head><meta charset=utf-8>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link href="../styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <meta
                 content="text/html; charset=utf-8" http-equiv=Content-Type><title>Emscripten-Generated
                 Code</title><style>body{font-family:arial;margin:0;padding:none}.emscripten{padding-right:0;margin-left:auto;margin-right:auto;display:block}div.emscripten{text-align:center}div.emscripten_border{border:1px solid #000}canvas.emscripten{border:0 none;background-color:#000}#emscripten_logo{display:inline-block;margin:0}.spinner{height:30px;width:30px;margin:0;margin-top:20px;margin-left:20px;display:inline-block;vertical-align:top;-webkit-animation:rotation .8s linear infinite;-moz-animation:rotation .8s linear infinite;-o-animation:rotation .8s linear infinite;animation:rotation .8s linear infinite;border-left:5px solid #ebebeb;border-right:5px solid #ebebeb;border-bottom:5px solid #ebebeb;border-top:5px solid #787878;border-radius:100%;background-color:#bdd72e}@-webkit-keyframes rotation{from{-webkit-transform:rotate(0)}to{-webkit-transform:rotate(360deg)}}@-moz-keyframes rotation{from{-moz-transform:rotate(0)}to{-moz-transform:rotate(360deg)}}@-o-keyframes rotation{from{-o-transform:rotate(0)}to{-o-transform:rotate(360deg)}}@keyframes rotation{from{transform:rotate(0)}to{transform:rotate(360deg)}}#status{display:inline-block;vertical-align:top;margin-top:30px;margin-left:20px;font-weight:700;color:#787878}#progress{height:20px;width:300px}#controls{display:inline-block;float:right;vertical-align:top;margin-top:30px;margin-right:20px}#output{width:100%;height:200px;margin:0 auto;margin-top:10px;border-left:0;border-right:0;padding-left:0;padding-right:0;display:block;background-color:#000;color:#fff;font-family:'Lucida Console',Monaco,monospace;outline:0}</style></head><body><div
                 class=spinner
                 id=spinner></div>
-                <a href="../index.html">
-                    <img src="../images/title-logo-2.png" alt="logo" class="image-logo">
-                </a>
+                <nav class="navbar navbar-expand-lg bg-white navbar-light">
+                    <div class="container">
+                      <a class="navbar-brand" href="../index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                        <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                      </svg></i> Zach Brock</a>
+                      
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
+                          <li class="nav-item">
+                            <a class="nav-link" href="../index.html#portfolio">Code</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="../index.html#about">About</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="../index.html#design">Web-Design</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="../index.html#contact">Contact</a>
+                          </li>
+                        </ul>
+                
+                        <a target='_blank' href='https://www.linkedin.com/in/zach-brock-687093210/' class='btn btn-primary'><i class="bi-linkedin"></i> Connect on Linkedin</a>
+                      </div>
+                    </div>
+                  </nav>
                 <div
                 class=emscripten
                 id=status>Downloading...</div><span
@@ -25,37 +57,5 @@
                 rows=8></textarea><script>var statusElement=document.getElementById("status"),progressElement=document.getElementById("progress"),spinnerElement=document.getElementById("spinner"),Module={preRun:[],postRun:[],print:function(){var e=document.getElementById("output");return e&&(e.value=""),function(t){arguments.length>1&&(t=Array.prototype.slice.call(arguments).join(" ")),console.log(t),e&&(e.value+=t+"\n",e.scrollTop=e.scrollHeight)}}(),printErr:function(e){arguments.length>1&&(e=Array.prototype.slice.call(arguments).join(" ")),console.error(e)},canvas:function(){var e=document.getElementById("canvas");return e.addEventListener("webglcontextlost",(function(e){alert("WebGL context lost. You will need to reload the page."),e.preventDefault()}),!1),e}(),setStatus:function(e){if(Module.setStatus.last||(Module.setStatus.last={time:Date.now(),text:""}),e!==Module.setStatus.last.text){var t=e.match(/([^(]+)\((\d+(\.\d+)?)\/(\d+)\)/),n=Date.now();t&&n-Module.setStatus.last.time<30||(Module.setStatus.last.time=n,Module.setStatus.last.text=e,t?(e=t[1],progressElement.value=100*parseInt(t[2]),progressElement.max=100*parseInt(t[4]),progressElement.hidden=!1,spinnerElement.hidden=!1):(progressElement.value=null,progressElement.max=null,progressElement.hidden=!0,e||(spinnerElement.style.display="none")),statusElement.innerHTML=e)}},totalDependencies:0,monitorRunDependencies:function(e){this.totalDependencies=Math.max(this.totalDependencies,e),Module.setStatus(e?"Preparing... ("+(this.totalDependencies-e)+"/"+this.totalDependencies+")":"All downloads complete.")}};Module.setStatus("Downloading..."),window.onerror=function(e){Module.setStatus("Exception thrown, see JavaScript console"),spinnerElement.style.display="none",Module.setStatus=function(e){e&&Module.printErr("[post-exception status] "+e)}}</script><script
                 async
                 src=softbody.js></script>
-                <footer class="footer" id="footer">
-                    <a href="../index.html#portfolio" class="home-link">
-                        <div class="return-button">&lt Back</div>
-                    </a>
-                    <a href="https://emscripten.org/" class="emscripten-logo">
-                        <img src="../images/Emscripten_logo.png" alt="Emscripten Logo">
-                    </a>
-                    <a href="mailto:zbrock.eng@gmail.com" class="social-list-link">zbrock.eng@gmail.com</a>
-                    <ul class="social-list">
-                        <li class="social-list-item">
-                            <a class="social-list-link"
-                                href="https://github.com/brock-eng">
-                                <img src="../images/github_link2.png"
-                                    target="_blank" class="image-icon-footer">
-                            </a>
-                        </li>
-                        <li class="social-list-item">
-                            <a class="social-list-link"
-                                href="https://www.linkedin.com/in/zach-brock-687093210/">
-                                <img src="../images/linkedin-link.png"
-                                    target="_blank" class="image-icon-footer">
-                            </a>
-                        </li>
-                        <li class="social-list-item">
-                            <a class="social-list-link"
-                                href="mailto:zbrock.eng@gmail.com">
-                                <img src="../images/email_link.png" target="_blank"
-                                    class="image-icon-footer">
-                            </a>
-                        </li>
-                    </ul>
-                </footer>
                 <link rel="stylesheet" href="../styles_application.css">
             </body></html>
