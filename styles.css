@@ -138,6 +138,7 @@ header.p-section {
   letter-spacing: .15em;
   text-transform: uppercase;
   padding: .65rem 1.5rem;
+  margin-bottom: 0.15rem;
 }
 
 .btn-group-lg>.btn, .btn-lg {
