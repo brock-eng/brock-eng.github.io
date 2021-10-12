@@ -278,9 +278,9 @@ header.p-section {
 }
 
 @keyframes remove{
-    to {
-        opacity: 0;
-    }
+  to {
+      opacity: 0;
+  }
 }
 
 .skills-resume-message{
@@ -290,4 +290,40 @@ header.p-section {
 
 .i-need-more-space{
   opacity: 0;
+}
+
+
+/* Animation Specific Classes */
+.fade {
+  background-color: lightgreen;
+  opacity: 1;
+}
+
+.animated{
+  transform: translateY(150px);
+}
+
+.logos:hover {
+  animation: come-out 1.25s ease forwards;
+}
+
+.slide-in{
+  animation: come-in 1.25s ease forwards;
+}
+
+.slide-in:nth-child(odd) {
+  animation-duration:2s;
+  
+}
+
+@keyframes come-in {
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes come-out {
+  to {
+    transform: translateY(15);
+  }
 }
