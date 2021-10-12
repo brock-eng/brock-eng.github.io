@@ -4,7 +4,8 @@
  * @param {string} targetClass           Class to be animated.
  * @param {string} animationClass        Animation class to be applied on scroll.
  */
-function Animate(targetClass, animationClass) {
+function AnimateOnScroll(targetClass, animationClass) {
+    targetClass = "." + targetClass;
     jQuery(function($) {
         $(window).on("load",function() {
             $(window).scroll(function() {
@@ -23,5 +24,5 @@ function Animate(targetClass, animationClass) {
 };
 
 $(document).ready(function() {
-    Animate(".logos", "slide-in")
+    AnimateOnScroll("logos", "slide-in")
 });
