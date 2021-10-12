@@ -303,10 +303,6 @@ header.p-section {
   transform: translateY(150px);
 }
 
-.logos:hover {
-  animation: come-out 1.25s ease forwards;
-}
-
 .slide-in{
   animation: come-in 1.25s ease forwards;
 }
@@ -317,13 +313,13 @@ header.p-section {
 }
 
 @keyframes come-in {
-  to {
+  60% {
     transform: translateY(0);
   }
-}
-
-@keyframes come-out {
-  to {
-    transform: translateY(15);
+  80% {
+    transform: scale(1.25);
+  }
+  100%{
+    transform: scale(1);
   }
 }
