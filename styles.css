@@ -1,3 +1,5 @@
+/* Zach Brocks Bootstrap Portfolio - Source at https://github.com/brock-eng/brock-eng.github.io */
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
 :root{
@@ -307,9 +309,12 @@ header.p-section {
   animation: come-in 1.25s ease forwards;
 }
 
-.slide-in:nth-child(odd) {
+.slide-in:nth-child(odd) { /*staggered effect*/
   animation-duration:2s;
-  
+}
+
+.slide-in:nth-child(1) {
+  animation-duration:2.5s;
 }
 
 @keyframes come-in {
@@ -317,7 +322,7 @@ header.p-section {
     transform: translateY(0);
   }
   80% {
-    transform: scale(1.25);
+    transform: scale(1.2);
   }
   100%{
     transform: scale(1);
