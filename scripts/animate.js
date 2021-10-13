@@ -12,7 +12,7 @@ function AnimateOnScroll(targetClass, animationClass) {
                 var windowBottom = $(this).scrollTop() + $(this).innerHeight();
                 $(targetClass).each(function() {
                     /* Check the location of each desired element */
-                    var objectBottom = $(this).offset().top + $(this).outerHeight();
+                    var objectBottom = $(this).offset().top;
                     
                     if (objectBottom < windowBottom) {
                         $(this).addClass(animationClass);
