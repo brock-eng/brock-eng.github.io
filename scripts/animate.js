@@ -26,3 +26,6 @@ function AnimateOnScroll(targetClass, animationClass) {
 $(document).ready(function() {
     AnimateOnScroll("logos", "slide-in")
 });
+
+
+
