@@ -302,24 +302,24 @@ header.p-section {
 }
 
 .animated{
-  transform: translateY(150px);
+  transform: translateX(100vw);
 }
 
 .slide-in{
-  animation: come-in 1.25s ease forwards;
+  animation: come-in 1.5s ease forwards;
 }
 
 .slide-in:nth-child(odd) { /*staggered effect*/
-  animation-duration:2s;
+  animation-duration:2.25s;
 }
 
 .slide-in:nth-child(1) {
-  animation-duration:2.5s;
+  animation-duration:2.7s;
 }
 
 @keyframes come-in {
   60% {
-    transform: translateY(0);
+    transform: translateX(0);
   }
   80% {
     transform: scale(1.2);
