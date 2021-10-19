@@ -3,8 +3,9 @@
  * @author Zach Brock
  * @param {string} targetClass           Class to be animated.
  * @param {string} animationClass        Animation class to be applied on scroll.
+ * @param {boolean} resetOnScrollUp      Set to true to reset the animation when scrolling back up the page
  */
-function AnimateOnScroll(targetClass, animationClass) {
+function AnimateOnScroll(targetClass, animationClass, resetOnScrollUp) {
     targetClass = "." + targetClass;
     jQuery(function($) {
         $(window).on("load",function() {
@@ -16,6 +17,8 @@ function AnimateOnScroll(targetClass, animationClass) {
                     
                     if (objectBottom < windowBottom) {
                         $(this).addClass(animationClass);
+                    } else if (resetOnScrollUp) {
+                        $(this).removeClass(animationClass);
                     }
                 });
             }).scroll(); //invoke scroll-handler on page-load
@@ -24,7 +27,8 @@ function AnimateOnScroll(targetClass, animationClass) {
 };
 
 $(document).ready(function() {
-    AnimateOnScroll("logos", "slide-in")
+    AnimateOnScroll("logos", "slide-in", true);
+    AnimateOnScroll("to-wiggle", "wiggle", true);
 });
 
 
