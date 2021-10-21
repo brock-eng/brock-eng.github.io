@@ -27,10 +27,10 @@ function AnimateOnScroll(targetClass, animationClass, resetOnScrollUp) {
 };
 
 $(document).ready(function() {
-    // optimize performance for mobile devices
+    // optimize performance for mobile device
     mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     console.log("Mobile device detected?: " + mobile);
-    
+
     AnimateOnScroll("logos", "slide-in", !mobile);
     AnimateOnScroll("to-wiggle", "wiggle", !mobile);
 });
